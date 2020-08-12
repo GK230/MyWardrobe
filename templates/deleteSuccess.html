@@ -1,0 +1,30 @@
+{% extends "child_layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/child_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/addSuccess.css') }}">
+
+{% endblock %}
+
+{% block title %}
+    Success
+{% endblock %}
+
+{% block main %}
+
+<menu class="buttons">
+    <ul>
+        <button><li><a href="select" class="selection">Make a selection</a></li></button>
+        <button><li><a href="add" class="addition">Make an addition</a></li></button>
+        <button><li><a href="donate" class="donation">Make a donation</a></li></button>
+    </ul>
+</menu>
+
+
+
+<h2>You have successfully<br>
+    deleted an
+    item from<br>
+    your wardrobe!</h2>
+    
+{% endblock %}

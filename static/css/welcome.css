@@ -1,0 +1,204 @@
+.welcome {
+    position: absolute;
+    z-index: 10;
+    left: 5%;
+    top: 22%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    text-align: center;
+    color: #152238;
+    font-weight: bold;
+    display: block;
+    line-height: 0.5em;
+    margin-top: 25%;
+}
+
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 800%;
+    line-height: 0.5em;
+}
+
+.quote {
+    position: absolute;
+    z-index: 10;
+    top: 0%;
+    left: 30%;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    text-emphasis: bold;
+}
+
+.live, .love {
+    color: #e6cea2
+}
+
+.live {
+    position: relative;
+    left: 10%;
+    animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+
+}
+
+.love {
+    position: relative;
+    left: 60%;
+    animation: fadeInAnimation ease 6s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+} 
+
+.shine {
+    position: relative;
+    left: 140%;
+    color: #d4af37;
+    animation: fadeInAnimation ease 9s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+}
+
+.buttons {
+    position: absolute;
+    top: 82%;
+    left: 5%;
+}
+
+.swatch, .swatch_dark {
+    width: 6.5%;
+}
+
+.button_titles {
+    position: absolute;
+    z-index: 20;
+    top: 82%;
+    left: 6%;
+}
+
+h5 {
+    color: white;
+    font-size: 1.3em;
+}
+
+.register {
+    position: absolute;
+    top: 1%;
+    left: 150%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    color: fuchsia;
+}
+
+/* Responsive breakpoints */
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .welcome {
+        top: 82%;
+        left: 30%;
+        display: inline;
+    }
+
+    .quote {
+        top: 2%;
+    }
+
+    h2 {
+        line-height: 0.5em;
+    }
+
+    .love {
+        left: 2%;
+        top: -10%;
+    }
+
+    .shine {
+        left: 2%;
+    }
+
+    .buttons {
+        top: 10%;
+    }
+
+    .swatch, .swatch_dark {
+        width: 17%;
+    }
+
+    .swatch_dark {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+
+    .button_titles {
+        top: 8%;
+    }
+
+    .register {
+        position: absolute;
+        top: 90%;
+        left: 0%;
+    }
+
+    .log_in {
+        position: relative;
+        left: 8%;
+    }
+
+    
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

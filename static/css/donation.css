@@ -1,0 +1,76 @@
+body {
+    background-color: pink;
+}
+
+.option {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.season, .type, .color, .pattern, .style {
+    position: absolute;
+    left: 20%;
+    width: 75%;
+}
+
+.season {
+    top: 30%;
+}
+
+.type {
+    top: 35%;
+}
+
+.color {
+    top: 42%;
+}
+
+.pattern {
+    top: 48%;
+}
+
+.style {
+    top: 55%;
+}
+
+.btn-submit, .btn-donate {
+    position: absolute;
+    left: 65%;
+    top: 62%;
+    width: 5%;
+    height: 5%;
+}
+
+.donate {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+.donateyes {
+    position: absolute;
+    top: 70%;
+}
+
+.items {
+    margin-top: 1%;
+    list-style: none; 
+    position: absolute;
+    top: 90%;
+    left: 10%;
+}
+
+dd, dt {
+    display: inline;
+}
+
+.sure {
+    margin-top: 1%;
+}

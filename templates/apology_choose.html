@@ -1,0 +1,31 @@
+{% extends "child_layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/child_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/apology.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/apology_choose.css') }}">
+
+
+
+
+{% endblock %}
+
+{% block title %}
+    apology
+{% endblock %}
+
+{% block main %}
+    <h2>Apology:</h2>
+    <div class="apology">
+        <h3>{{ bottom }}</h3>
+    </div>
+
+    <menu class="buttons">
+        <ul>
+            <button><li><a href="select" class="selection">Make a selection</a></li></button>
+            <button><li><a href="add" class="addition">Make an addition</a></li></button>
+            <button><li><a href="donate" class="donation">Make a donation</a></li></button>
+        </ul>
+        </menu>
+
+{% endblock %}

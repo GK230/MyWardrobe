@@ -1,0 +1,22 @@
+{% include "child_layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/child_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/choose.css') }}">
+{% endblock %}
+
+
+{% block main %}
+
+    <h2>Choose:</h2>
+
+    <menu class="buttons">
+    <ul>
+        <button><li><a href="select" class="selection">Make a selection</a></li></button>
+        <button><li><a href="add" class="addition">Make an addition</a></li></button>
+        <button><li><a href="donate" class="donation">Make a donation</a></li></button>
+    </ul>
+    </menu>
+
+
+{% endblock %}

@@ -1,0 +1,124 @@
+{% include "grandchild_layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/child_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/grandchild.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/selectstyles.css') }}">
+
+{% endblock %}
+{% block main %}
+
+<script>
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#blah')
+                .attr('src', e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+</script>
+
+
+<form class="choose" action = "/add" method = "POST" enctype = "multipart/form-data">
+
+    <input type='file' name="file" onchange="readURL(this);" />
+    <img id="blah" src="http://placehold.it/180" alt="your image" />        
+    
+    <div class="season">
+        <label for="seasons">Season:</label> 
+        <label for="A/W">A/W</label>
+        <input type="radio" id="A/W" name="season" value="A/W">
+        <label for="S/S">S/S</label>
+        <input type="radio" id="S/S" name="season" value="S/S">
+    </div>
+
+    <div class="type">
+        <label for="type">Type:</label>
+        <select name="type" title="Choose one of the following..." class="selectpicker dropup" data-dropup-auto="false" data-width="65%">
+        <option data-content="<span class='badge badge-success'>Top/Dress</span>">Top/Dress</option>
+        <option data-content="<span class='badge badge-success'>Bottom</span>">Bottom</option>
+        <option data-content="<span class='badge badge-success'>Shoes</span>">Shoes</option>
+        <option data-content="<span class='badge badge-success'>Scarf</span>">Scarf</option>
+        <option data-content="<span class='badge badge-success'>Hat</span>">Hat</option>
+        <option data-content="<span class='badge badge-success'>Jewellery</span>">Jewellery</option>
+        <option data-content="<span class='badge badge-success'>Jacket/Coat</span>">Jacket/Coat</option>
+        <option data-content="<span class='badge badge-success'>Bag</span>">Bag</option>
+
+      </select>
+    </div>
+    <div class="color">
+        <label for="color">Color:</label>
+        <select name="colors" title="Choose from the following..." class="selectpicker dropup" data-dropup-auto="false" data-width="65%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Purple</span>">Purple</option>
+            <option data-content="<span class='badge badge-success'>Multi</span>">Multi</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="pattern">
+        <label for="pattern">Pattern:</label>
+        <select name="patterns" title="Choose from the following..." class="selectpicker" data-width="65%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+
+
+        </select>
+    </div>
+    <div class="style">
+        <label for="style">Style:</label>
+        <select name="styles" title="Choose from the following..." class="selectpicker" data-width="65%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+        <button class="btn-submit" type="submit">Add</button>
+    </form>
+
+    <div class="option">
+        <h1>Make</h1>
+        <h1>an</h1>
+        <h1>addition</h1>
+    </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

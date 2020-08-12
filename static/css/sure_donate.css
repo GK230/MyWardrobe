@@ -1,0 +1,34 @@
+body {
+    background-color: pink;
+    font-size: 14px;
+}
+
+.item {
+    position: absolute;
+    left: 30%;
+}
+
+.sure {
+    position: absolute;
+    left: 30%;
+    top: 85%;
+}
+
+label {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.yesno {
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    margin-top: 5%;
+}
+
+.btn-donate {
+    position: absolute;
+    top: 250%;
+    left: 90%;
+}
+

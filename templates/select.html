@@ -1,0 +1,441 @@
+{% include "grandchild_layout.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/select.css') }}">
+
+{% endblock %}
+
+{% block main %}
+
+<div class="option">
+    <h1>Make a Selection</h1>
+</div>
+<form class="choose" action = "/select" method = "POST" enctype = "multipart/form-data">
+    <div class="season">
+        <label for="seasons">Season:</label> 
+        <label for="A/W">A/W</label>
+        <input type="radio" id="A/W" name="season" value="A/W">
+        <label for="S/S">S/S</label>
+        <input type="radio" id="S/S" name="season" value="S/S">
+    </div>
+    <label for="topsdresses">Tops/Dresses</label>
+    <input type="checkbox" id="topsdresses" name="topsdresses" value="topsdresses">
+    <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="topsdresses_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="topsdresses_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="topsdresses_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+    <label for="bottoms">Bottoms</label>
+    <input type="checkbox" id="bottoms" name="bottoms" value="bottoms">
+    <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="bottoms_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="bottoms_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="bottoms_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+    <label for="shoes">Shoes</label>
+    <input type="checkbox" id="shoes" name="shoes" value="shoes"> 
+       <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="shoes_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Purple</span>">Purple</option>
+            <option data-content="<span class='badge badge-success'>Multi</span>">Multi</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="shoes_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="shoes_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+    <label for="scarves">Scarves</label>
+    <input type="checkbox" id="scarves" name="scarves" value="scarves">
+        <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="scarves_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Purple</span>">Purple</option>
+            <option data-content="<span class='badge badge-success'>Multi</span>">Multi</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="scarves_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="scarves_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+    <label for="hats">Hats</label>
+    <input type="checkbox" id="hats" name="hats" value="hats">
+        <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="hats_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Purple</span>">Purple</option>
+            <option data-content="<span class='badge badge-success'>Multi</span>">Multi</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="hats_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="hats_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+    <label for="jewellery">Jewellery</label>
+    <input type="checkbox" id="jewellery" name="jewellery" value="jewellery">
+        <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="jewellery_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Purple</span>">Purple</option>
+            <option data-content="<span class='badge badge-success'>Multi</span>">Multi</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="jewellery_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="jewellery_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+    <label for="jacketscoats">Jackets/Coats</label>
+    <input type="checkbox" id="jacketscoats" name="jacketscoats" value="jacketscoats">
+        <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="jacketscoats_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Purple</span>">Purple</option>
+            <option data-content="<span class='badge badge-success'>Multi</span>">Multi</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="jacketscoats_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="jacketscoats_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+    <label for="bags">Bags</label>
+    <input type="checkbox" id="bags" name="bags" value="bags">
+        <div class="colors">
+        <label for="colors">Colors:</label>
+        <select name="bags_colors" class="selectpicker" data-dropup-auto="false" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>White</span>">White</option>
+            <option data-content="<span class='badge badge-success'>Pink</span>">Pink</option>
+            <option data-content="<span class='badge badge-success'>Blue</span>">Blue</option>
+            <option data-content="<span class='badge badge-success'>Black</span>">Black</option>
+            <option data-content="<span class='badge badge-success'>Red</span>">Red</option>
+            <option data-content="<span class='badge badge-success'>Brown</span>">Brown</option>
+            <option data-content="<span class='badge badge-success'>Green</span>">Green</option>
+            <option data-content="<span class='badge badge-success'>Gold</span>">Gold</option>
+            <option data-content="<span class='badge badge-success'>Silver</span>">Silver</option>
+            <option data-content="<span class='badge badge-success'>Purple</span>">Purple</option>
+            <option data-content="<span class='badge badge-success'>Multi</span>">Multi</option>
+            <option data-content="<span class='badge badge-success'>Cream</span>">Cream</option>
+            <option data-content="<span class='badge badge-success'>Grey</span>">Grey</option>
+
+        </select>
+    </div>
+    <div class="patterns">
+        <label for="patterns">Patterns:</label>
+        <select name="bags_patterns" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Plain</span>">Plain</option>
+            <option data-content="<span class='badge badge-success'>Striped</span>">Striped</option>
+            <option data-content="<span class='badge badge-success'>Dotted</span>">Dotted</option>
+            <option data-content="<span class='badge badge-success'>Floral</span>">Floral</option>
+            <option data-content="<span class='badge badge-success'>Slogan</span>">Slogan</option>
+            <option data-content="<span class='badge badge-success'>Animal</span>">Animal</option>
+            <option data-content="<span class='badge badge-success'>Checked</span>">Checked</option>
+        </select>
+    </div>
+    <div class="styles">
+        <label for="styles">Styles:</label>
+        <select name="bags_styles" class="selectpicker" data-width="75%" multiple data-live-search="true">
+            <option data-content="<span class='badge badge-success'>Chic</span>">Chic</option>
+            <option data-content="<span class='badge badge-success'>Smart</span>">Smart</option>
+            <option data-content="<span class='badge badge-success'>Ethnic</span>">Ethnic</option>
+            <option data-content="<span class='badge badge-success'>Evening</span>">Evening</option>
+            <option data-content="<span class='badge badge-success'>Sports</span>">Sports</option>
+            <option data-content="<span class='badge badge-success'>Party</span>">Party</option>
+            <option data-content="<span class='badge badge-success'>Work</span>">Work</option>
+            <option data-content="<span class='badge badge-success'>Yoga</span>">Yoga</option>
+            <option data-content="<span class='badge badge-success'>Interview</span>">Interview</option>
+            <option data-content="<span class='badge badge-success'>Rain</span>">Rain</option>
+            <option data-content="<span class='badge badge-success'>Sun</span>">Sun</option>
+            <option data-content="<span class='badge badge-success'>Casual</span>">Casual</option>
+        </select>
+    </div>
+        <button class="btn-submit" type="submit">Select</button>
+    </form>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+    
+
+
+
+

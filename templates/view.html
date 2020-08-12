@@ -1,0 +1,228 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view.css') }}">
+
+{% endblock %}
+
+{% block main %}
+
+<menu class="buttons">
+  <ul>
+      <button><li><a href="select" class="selection">Make a selection</a></li></button>
+      <button><li><a href="add" class="addition">Make an addition</a></li></button>
+      <button><li><a href="donate" class="donation">Make a donation</a></li></button>
+  </ul>
+</menu>
+
+
+<div class="TopDress">
+
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[0] %}
+
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+</div>
+
+
+
+<div class="Bottom">
+
+  <div id="demo1" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[1] %}
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo1" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+</div>
+
+<div class="Shoes">
+
+  <div id="demo2" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[2] %}
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo2" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+</div>
+
+<div class="scarves">
+
+  <div id="demo3" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[3] %}
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo3" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+</div>
+
+<div class="hats">
+
+  <div id="demo4" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[4] %}
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo4" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo4" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+</div>
+
+<div class="jewellery">
+
+  <div id="demo5" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[5] %}
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo5" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo5" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+</div>
+
+<div class="jackets_coats">
+
+  <div id="demo6" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[6] %}
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo6" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo6" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+</div>
+
+<div class="bags">
+
+  <div id="demo7" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% for item in clothes[7] %}
+      <div class="item{% if loop.index == 1 %} active{% endif %}">
+        <img src="/image?itemid={{ item }}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo7" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo7" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+</div>
+
+{% endblock %}

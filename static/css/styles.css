@@ -1,0 +1,32 @@
+body {
+    background-image: url("../../static/images/wallpaper.jpg");
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    width: 20%;
+    top: -4%;
+}
+
+.mirror {
+    position: absolute;
+    width: 87.5%;
+    height: 100%;
+    left: 12%;
+    z-index: 8;
+}
+
+.glass {
+    position: absolute;
+    left: 15%;
+    top: 6%;
+    width: 83%;
+    height: 87%;
+    z-index: 9;
+}
+
+
+
+
+

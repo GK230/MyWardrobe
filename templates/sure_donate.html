@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sure_donate.css') }}">
+
+  <title>Sure you want to donate?</title>
+</head>
+<body>
+  <form class="definite" action="/sure_donate" method = "POST" enctype = "multipart/form-data">
+
+  <img src="./static/images/logo.png">
+{% for item in itemno %}
+  <input type="hidden" name="itemid" value="{{ item }}"/>
+
+  <div class="item">
+    <img src="/image?itemid={{ item }}">
+    <p>{{ item }}</p>
+  </div>
+{% endfor %}
+
+
+  <div class="sure">
+    <label>Are you sure you want to donate this item from your wardrobe?</label>
+  <div class="yesno">
+    <label for="Yes">Yes</label>
+    <input type="radio" id="yes" name="sure" value="yes">
+    <label for="No">No</label>
+    <input type="radio" id="no" name="sure" value="no">
+  </div>
+
+    <button class="btn-donate" type="submit">Submit</button>
+  </div>
+
+  <script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }}; </script>
+
+</body>
+</html>

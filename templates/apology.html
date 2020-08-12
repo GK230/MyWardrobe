@@ -1,0 +1,24 @@
+{% extends "child_layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/child_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/apology.css') }}">
+
+{% endblock %}
+
+{% block title %}
+    apology
+{% endblock %}
+
+{% block main %}
+    <h2>Apology:</h2>
+    <div class="apology">
+        <h3>{{ bottom }}</h3>
+    </div>
+
+    <div class="button_titles">
+        <a href="login"><h5 class="log_in">Log in</h5></a>
+        <a href="register"><h5 class="register">Register</h5></a>
+    </div>
+
+{% endblock %}

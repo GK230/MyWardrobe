@@ -1,0 +1,43 @@
+h3 {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 80;
+    color: rgb(107, 33, 136);
+    font-size: 3em;
+}
+
+.buttons {
+    position: absolute;
+    top: 75%;
+}
+
+.swatch, .swatch_dark {
+    width: 6.5%;
+}
+
+.button_titles {
+    position: absolute;
+    z-index: 60;
+    top: 72%;
+    left: 40%;
+}
+
+h5 {
+    color: white;
+    font-size: 2em;
+}
+
+.register {
+    position: absolute;
+    top: 1%;
+    left: 150%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    color: fuchsia;
+}

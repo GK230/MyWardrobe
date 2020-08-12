@@ -1,0 +1,126 @@
+.choose {
+    position: absolute;
+    z-index: 60;
+    top: 35%;
+    left: 2%;
+}
+
+.form_title {
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+menu {
+    position: absolute;
+    top: 60%;
+    left: -3%;
+    z-index: 60;
+    width: 50%;
+
+}
+
+.buttons {
+    margin-top: 2%;
+    width: 50%;
+}
+
+button {
+    width: 30%;
+    display: block;
+    margin-bottom: 1%;
+}
+
+
+ul li {
+    list-style: none;
+    margin-bottom: 4%;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    margin-bottom: 5%;
+
+}
+
+a:hover {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+label {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+.TopDress {
+    position: absolute;
+    top: 4%;
+    left: 29%;
+    z-index: 60;
+} 
+
+.Bottom {
+    position: absolute;
+    top: 4%;
+    left: 46%;
+    z-index: 60;
+} 
+
+.Shoes {
+    position: absolute;
+    top: 4%;
+    left: 63%;
+    z-index: 60;
+} 
+
+.scarves {
+    position: fixed;
+    top: 4%;
+    left: 80%;
+    z-index: 60;
+} 
+
+.hats {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    z-index: 60;
+}
+
+.jewellery {
+    position: fixed;
+    top: 50%;
+    left: 46%;
+    z-index: 60;
+}
+
+.jackets_coats {
+    position: fixed;
+    top: 50%;
+    left: 63%;
+    z-index: 60;
+}
+
+.bags {
+    position: fixed;
+    top: 50%;
+    left: 80%;
+    z-index: 60;
+}
+
+
+
+

@@ -1,0 +1,32 @@
+.buttons {
+    display: block;
+    font-size: 2em;
+    padding: 3%;
+    width: 125%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    z-index: 80;
+}
+
+button {
+    display: block;
+    width: 20%;
+    margin: 1%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5%;
+    font-size: 3em;
+}

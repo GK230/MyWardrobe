@@ -1,0 +1,28 @@
+.form {
+    position: absolute;
+    z-index: 50;
+    top: 37%;
+    left: 52%;
+}
+
+.form-group {
+    padding: 10%;
+}
+
+.form-control {
+    width: 150%;
+    padding: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.btn-login {
+    position: absolute;
+    left: 90%;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1%;
+}
+

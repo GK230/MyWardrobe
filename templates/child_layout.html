@@ -1,0 +1,20 @@
+{% include "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/child_styles.css') }}">
+{% endblock %}
+
+
+
+<body>
+
+<div class="rectangle">
+</div>
+
+<div class="heading"></div>
+
+
+{% block main %}{% endblock %}
+
+</body>
+

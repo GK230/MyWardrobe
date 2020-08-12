@@ -1,0 +1,30 @@
+h2 {
+    position: absolute;
+    left: 45%;
+    top: 25%;
+}
+
+menu {
+    position: relative;
+    top: 20%;
+    left: 37%;
+    z-index: 60;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+a:hover {
+    color: rebeccapurple;
+}
+
+a:visited {
+    color: black;
+}
