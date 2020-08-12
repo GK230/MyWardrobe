@@ -17,7 +17,7 @@ Watch the video:
 
 https://www.youtube.com/watch?v=yKQCXRG1nQk
 
-![project image](https://github.com/GK230/MyWardrobe/blob/master/Screen%20Shot%202020-07-25%20at%2014.22.04.png)
+![project image](https://github.com/GK230/MyWardrobe/blob/master/Screen%20Shot%202020-08-12%20at%2013.18.19.png)
 
 Background:
 
