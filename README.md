@@ -1,10 +1,18 @@
-To run locally:
+# MyWardrobe
+
+![project image](https://github.com/GK230/MyWardrobe/blob/master/Screen%20Shot%202020-08-12%20at%2013.18.19.png)
+
+## Watch the video:
+
+https://www.youtube.com/watch?v=yKQCXRG1nQk
+
+## To run locally:
 
   Requirements: Flask, Python 3.6
   
   To run: flask run, click on link displayed
   
-Main features:
+## Main features:
   
   * Signup/Login
   * Upload photos of clothing that will be kept as part of the user's profile
@@ -13,13 +21,7 @@ Main features:
   * Mix and match uploaded items in onscreen mirror as desired
   * Add new items to your digital wardrobe and also delete them
 
-Watch the video:
-
-https://www.youtube.com/watch?v=yKQCXRG1nQk
-
-![project image](https://github.com/GK230/MyWardrobe/blob/master/Screen%20Shot%202020-08-12%20at%2013.18.19.png)
-
-Background:
+## Background:
 
 I love shopping, and this app is a cure for me and others like me!
 
