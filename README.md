@@ -2,6 +2,8 @@
 
 ![project image](https://github.com/GK230/MyWardrobe/blob/master/Screen%20Shot%202020-08-12%20at%2013.18.19.png)
 
+An online wardrobe and fashion design app.
+
 ## Watch the video:
 
 https://www.youtube.com/watch?v=yKQCXRG1nQk
@@ -21,11 +23,9 @@ https://www.youtube.com/watch?v=yKQCXRG1nQk
   * Mix and match uploaded items in onscreen mirror as desired
   * Add new items to your digital wardrobe and also delete them
 
-## Improvements
-I think the Ui could be improved, with more modern CSS.
+I think the UI could be improved, with more modern CSS.
 
-## Upcoming features
-I would build a favourites system, so users could pick and unpick their favourite items. Also some AR/VR would be great - Users could see themselves on the catwalk wearing potential outfits - no need to try on clothes again!
+In future, I would build a favourites system, so users could pick and unpick their favourite items. Also some AR/VR would be great - Users could see themselves on the catwalk wearing potential outfits - no need to try on clothes again!
 
 
 ## Background:
