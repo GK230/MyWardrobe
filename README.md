@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=yKQCXRG1nQk
 
 I think the UI could be improved, with more modern CSS.
 
-In future, I would build a favourites system, so users could pick and unpick their favourite items. Also some AR/VR would be great - Users could see themselves on the catwalk wearing potential outfits - no need to try on clothes again!
+In future, I would build a favourites system, so users could pick and unpick their favourite items. Also some AR/VR would be great - users could see themselves on the catwalk wearing potential outfits - no need to try on clothes again!
 
 
 ## Background:
