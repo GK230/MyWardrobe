@@ -1,8 +1,8 @@
 # MyWardrobe
 
-![project image](https://github.com/GK230/MyWardrobe/blob/master/Screen%20Shot%202020-08-12%20at%2013.18.19.png)
-
 An online wardrobe and fashion design app.
+
+![project image](https://github.com/GK230/MyWardrobe/blob/master/Screen%20Shot%202020-08-12%20at%2013.18.19.png)
 
 ## Watch the video:
 
