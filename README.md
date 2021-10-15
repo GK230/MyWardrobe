@@ -23,7 +23,11 @@ https://www.youtube.com/watch?v=yKQCXRG1nQk
   * Mix and match uploaded items in onscreen mirror as desired
   * Add new items to your digital wardrobe and also delete them
 
+### Improvements
+
 I think the UI could be improved, with more modern CSS.
+
+### Upcoming features
 
 In future, I would build a favourites system, so users could pick and unpick their favourite items. Also some AR/VR would be great - users could see themselves on the catwalk wearing potential outfits - no need to try on clothes again!
 
